@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+          - name: ping1
+            ping:
+                    data: "{{ item }}"
+            with_items:
+                    - koti
+                    - Rajesh
+                    - Rehman
+                    - venkatesh
+
+          - name: ping2
+            ping:
